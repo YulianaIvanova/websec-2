@@ -1,0 +1,26 @@
+<classifiers>
+  <file name="routesAndStopsCorrespondence.xml">
+    <modified>1700744787.31</modified>
+  </file>
+  <file name="GeoportalRoutesCorrespondence.xml">
+    <modified>1700744787.31</modified>
+  </file>
+  <file name="routes.xml">
+    <modified>1700744787.31</modified>
+  </file>
+  <file name="filtered">
+    <modified>1700744872.12</modified>
+  </file>
+  <file name="classifiers.zip">
+    <modified>1700744787.1</modified>
+  </file>
+  <file name="stopsFullDB.xml">
+    <modified>1700744787.31</modified>
+  </file>
+  <file name="GeoportalStopsCorrespondence.xml">
+    <modified>1700744787.31</modified>
+  </file>
+  <file name="stops.xml">
+    <modified>1700744787.31</modified>
+  </file>
+</classifiers>

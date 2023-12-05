@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Прибывалка</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="/static/icon.png">
+    <link href="/static/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <img src="/static/name_app.png"/></a>
+            <form id="Search" name="busStop" class="col-sm-6 d-flex" role="search" method="get">
+                <input class="form-control" id="TextInput" name="busStop" type="search"
+                    placeholder="Введите название остановки" form="Search">
+                <input class="btn btn-primary" type="submit" value="Поиск" form="Search">
+            </form>
+          </div>
+    </nav>
+    <div id="map"></div>
+    <script type="text/javascript">
+        
+
+        class Tag_map {
+            constructor(stop_id, label, latitude, longitude) {
+                this.stop_id = stop_id
+                this.label = label
+                this.latitude = latitude
+                this.longitude = longitude
+            }
+        }
+
+        async function loadStops() {
+            let url = "https://tosamara.ru/api/v2/classifiers/stopsFullDB.xml";
+            let parser = new window.DOMParser();
+            try {
+                let res = await fetch(url).then(response => response.text()).then(str => {
+                    return parser.parseFromString(str, "text/xml")
+                });
+                return res;
+            }
+            catch (err) { console.log('err:', err); }
+        }
+
+
+        async function getInformationForMarks() {
+            const data = await loadStops();
+            console.log(data);
+            let size = data.getElementsByTagName("stop").length;
+            let stop_data = data.getElementsByTagName("stop");
+            let lst = new Array();
+
+            for (let i = 0; i < size; i++) {
+                lst.push(new Tag_map(stop_data[i].childNodes[0].textContent,
+                    stop_data[i].childNodes[1].textContent + '\r\n'
+                    + stop_data[i].childNodes[2].textContent + '\n'
+                    + stop_data[i].childNodes[3].textContent,
+                    stop_data[i].childNodes[23].textContent,
+                    stop_data[i].childNodes[24].textContent));
+            }
+
+            console.log(lst)
+            if (lst.size === 0) {
+                lst = "No Matches";
+            }
+
+            return await Promise.resolve(lst);
+        }
+
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [53.195878, 50.100202],
+                zoom: 13
+            });
+
+            getInformationForMarks().then((stops) => {
+            for (let i = 0; i < stops.length; i++) {
+
+                DG.marker([stops[i].latitude, stops[i].longitude]).addTo(map).bindPopup(stops[i].label);
+            }});
+        });
+        
+    </script>
+
+
+
+</body>
+</html>

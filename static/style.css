@@ -1,0 +1,23 @@
+body {
+    background: radial-gradient(circle, #00C9FF 0%, #92fe9d 100%);
+}
+.navbar-brand{
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.form-control{
+    border: none;
+}
+
+#map{
+    height: 800px;
+}
+
+#marker{
+    background-image: url("/static/icon_busstop.png");
+}
+
+h1{
+    color: purple;
+}
