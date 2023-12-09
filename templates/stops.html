@@ -15,13 +15,23 @@
 <body>
 
     <div class="container">
-        <h1 class="display-3 text-center"><b>Найдены следующие остановки </h1>
-        <!--<div class="container-fluid">
-            <a class="navbar-brand" href="/">
-              
-        </div>-->
+
+        <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="/static/icon-back.png" alt="" width="50" height="50" class="d-inline-block align-text-top"> </a>
+          <h3><b>Найдены следующие остановки </h3>
+  
+        </div>
 
     </div>
+    
+    <ul class="list-group">
+        {% for stop in stops %}
+        <a href="/prediction?stopId={{stop['stop_id']}}" class="list-group-item list-group-item-action">{{
+            stop['title'] }} <br>{{ stop['location'] }}<br>{{stop['side']}}</a>
+        {% endfor %}
+    </ul>
 
 
 </body>

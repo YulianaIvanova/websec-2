@@ -14,10 +14,4 @@ body {
     height: 800px;
 }
 
-#marker{
-    background-image: url("/static/icon_busstop.png");
-}
 
-h1{
-    color: purple;
-}
