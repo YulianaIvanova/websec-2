@@ -1,140 +1,88 @@
 <?xml version='1.0' encoding='utf8'?>
 <transport>
-  <KR_ID>114</KR_ID>
-  <stateNumber>2155</stateNumber>
-  <modelTitle>Т-3Е</modelTitle>
-  <spanLength>578.0</spanLength>
-  <remainingLength>43.6</remainingLength>
-  <latitude>53.19972017973398</latitude>
-  <longitude>50.258124162079184</longitude>
+  <KR_ID>116</KR_ID>
+  <stateNumber>891</stateNumber>
+  <modelTitle>Т-3</modelTitle>
+  <spanLength>510.0</spanLength>
+  <remainingLength>15.7</remainingLength>
+  <latitude>53.192046934426166</latitude>
+  <longitude>50.20540585751603</longitude>
   <nextStops>
     <stop>
-      <KS_ID>241</KS_ID>
-      <time>1.1999999999999993</time>
+      <KS_ID>1860</KS_ID>
+      <time>131.57</time>
     </stop>
     <stop>
-      <KS_ID>2063</KS_ID>
-      <time>275.99</time>
+      <KS_ID>763</KS_ID>
+      <time>314.0</time>
     </stop>
     <stop>
-      <KS_ID>273</KS_ID>
-      <time>470.59</time>
+      <KS_ID>1259</KS_ID>
+      <time>428.59</time>
     </stop>
     <stop>
-      <KS_ID>274</KS_ID>
-      <time>686.45</time>
+      <KS_ID>762</KS_ID>
+      <time>679.79</time>
     </stop>
     <stop>
-      <KS_ID>761</KS_ID>
-      <time>942.81</time>
+      <KS_ID>760</KS_ID>
+      <time>948.64</time>
     </stop>
     <stop>
-      <KS_ID>249</KS_ID>
-      <time>1054.22</time>
+      <KS_ID>239</KS_ID>
+      <time>1026.67</time>
     </stop>
     <stop>
-      <KS_ID>764</KS_ID>
-      <time>1233.79</time>
+      <KS_ID>547</KS_ID>
+      <time>1157.44</time>
     </stop>
     <stop>
-      <KS_ID>765</KS_ID>
-      <time>1373.58</time>
+      <KS_ID>236</KS_ID>
+      <time>1399.42</time>
     </stop>
     <stop>
-      <KS_ID>246</KS_ID>
-      <time>1550.99</time>
+      <KS_ID>272</KS_ID>
+      <time>1628.51</time>
     </stop>
     <stop>
-      <KS_ID>741</KS_ID>
-      <time>1764.92</time>
+      <KS_ID>233</KS_ID>
+      <time>1878.26</time>
     </stop>
     <stop>
-      <KS_ID>152</KS_ID>
-      <time>1879.64</time>
+      <KS_ID>230</KS_ID>
+      <time>1979.2</time>
     </stop>
     <stop>
-      <KS_ID>753</KS_ID>
-      <time>1997.61</time>
+      <KS_ID>228</KS_ID>
+      <time>2146.36</time>
     </stop>
     <stop>
-      <KS_ID>1281</KS_ID>
-      <time>2125.78</time>
+      <KS_ID>226</KS_ID>
+      <time>2352.6</time>
     </stop>
     <stop>
-      <KS_ID>154</KS_ID>
-      <time>2283.53</time>
+      <KS_ID>225</KS_ID>
+      <time>2499.62</time>
     </stop>
     <stop>
-      <KS_ID>155</KS_ID>
-      <time>2494.39</time>
+      <KS_ID>1079</KS_ID>
+      <time>2659.35</time>
     </stop>
     <stop>
-      <KS_ID>156</KS_ID>
-      <time>2619.84</time>
+      <KS_ID>874</KS_ID>
+      <time>2796.14</time>
     </stop>
     <stop>
-      <KS_ID>175</KS_ID>
-      <time>2709.15</time>
+      <KS_ID>220</KS_ID>
+      <time>2944.37</time>
     </stop>
     <stop>
-      <KS_ID>174</KS_ID>
-      <time>2851.29</time>
+      <KS_ID>1025</KS_ID>
+      <time>3060.29</time>
     </stop>
     <stop>
-      <KS_ID>768</KS_ID>
-      <time>3034.1</time>
-    </stop>
-    <stop>
-      <KS_ID>769</KS_ID>
-      <time>3218.02</time>
-    </stop>
-    <stop>
-      <KS_ID>171</KS_ID>
-      <time>3399.64</time>
-    </stop>
-    <stop>
-      <KS_ID>771</KS_ID>
-      <time>3601.75</time>
-    </stop>
-    <stop>
-      <KS_ID>772</KS_ID>
-      <time>3842.95</time>
-    </stop>
-    <stop>
-      <KS_ID>143</KS_ID>
-      <time>4082.32</time>
-    </stop>
-    <stop>
-      <KS_ID>1802</KS_ID>
-      <time>4207.56</time>
-    </stop>
-    <stop>
-      <KS_ID>746</KS_ID>
-      <time>4407.52</time>
-    </stop>
-    <stop>
-      <KS_ID>774</KS_ID>
-      <time>4604.79</time>
-    </stop>
-    <stop>
-      <KS_ID>135</KS_ID>
-      <time>4759.97</time>
-    </stop>
-    <stop>
-      <KS_ID>776</KS_ID>
-      <time>5020.97</time>
-    </stop>
-    <stop>
-      <KS_ID>777</KS_ID>
-      <time>5178.57</time>
-    </stop>
-    <stop>
-      <KS_ID>1201</KS_ID>
-      <time>5322.1</time>
-    </stop>
-    <stop>
-      <KS_ID>1742</KS_ID>
-      <time>5427.14</time>
+      <KS_ID>170</KS_ID>
+      <time>3216.07</time>
     </stop>
   </nextStops>
 </transport>
